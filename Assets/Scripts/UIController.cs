@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class UIController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] TextMeshProUGUI m_dialoguePanel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void AppendParagraph( string _appendName, string _appendText ) {
+        m_dialoguePanel.text += "\n\n";
+        m_dialoguePanel.text += _appendName;
+        m_dialoguePanel.text += "\n\n";
+        m_dialoguePanel.text += _appendText; 
     }
 }

@@ -6,6 +6,7 @@ public class InteractableCharacters : MonoBehaviour
 {
     [SerializeField] private Transform m_cameraZoomPos;
     [SerializeField] private float m_cameraZoomSize;
+    private List<SelectableWords> m_selectableWordsInventory;
 
     public void OnInteracted(out Vector3 _camPos, out float _camSize) {
         _camPos = m_cameraZoomPos.position;

@@ -7,7 +7,8 @@ public class GameController : MonoBehaviour
     public static GameController m_instance;
     [SerializeField] private CameraController m_cameraController;
     [SerializeField] private InputController m_inputController;
-    
+    [SerializeField] private UIController m_uiController;
+
     private bool m_isAnimating;
   
     private void Awake() {
@@ -35,4 +36,7 @@ public class GameController : MonoBehaviour
         m_isAnimating = _b;
     }
 
+    public UIController GetUIController() {
+        return m_uiController;
+    }
 }
