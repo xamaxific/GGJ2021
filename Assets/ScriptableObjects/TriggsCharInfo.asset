@@ -31,11 +31,11 @@ MonoBehaviour:
       moment so\u2026 \\n*He\u2019s gone silent*"
   - m_keywordEnum: 3
     m_keywordInfo: 'Yes... the bear? The... it''s strange, I''ve known her all my
-      life but I can''t... \nNights by the fire. Songs. She was always <color=#91e6c0><b>singing</color></b>. 
-      \nOnce she sang a song about leaving the island... \nI don''t know why I remember
-      that. '
+      life but I can''t remember her name... \nNights by the fire. Songs. She was
+      always <color=#91e6c0><b>singing</color></b>.  \nOnce she sang something about
+      leaving the island... \nI don''t know why I remember that. '
   - m_keywordEnum: 4
-    m_keywordInfo: "Me? I\u2019ve got a thousand stories. \\nIf I could only remember
+    m_keywordInfo: "Me? I\u2019ve got a thousand stories.\\n If I could only remember
       one... "
   - m_keywordEnum: 5
     m_keywordInfo: Ren was clutching that thing so tight...
@@ -44,20 +44,22 @@ MonoBehaviour:
       hunk of junk. \\nI shouldn't have asked Ren to make it, but I was desperate.
       I'd built this thing from wreckage. You know, pieces that drifted through the
       stormwall. \\nI wouldn't have asked. Ren could have got caught. But... I had
-      to. I had to because... \\nBecause... that's it! Because I have to see my family
+      to. I had to because... \\nBecause... yes...because I have to see my family
       again. If they're still out there. "
   - m_keywordEnum: 7
     m_keywordInfo: "Don\u2019t tell the bear, but I never could stand her soup..."
   - m_keywordEnum: 8
     m_keywordInfo: "It <i>is</i> bright tonight, isn\u2019t it? \\nI didn't always
-      live on the island, you know. \\nI was a fisherman. I had a family. A current
-      pulled me to the storm wall, the ship splintered, and I woke up... well.  \\nThat
-      star. That star reminds me I am living under the same sky as they are.... "
+      live on the island, you know. \\nI was a fisherman. I had a family. A little
+      girl.  \\nA current pulled me to the storm, the ship splintered, and I woke
+      up... well.  \\On the island. \\nThat star. That star reminds me I am living
+      under the same sky as my daughter.... "
   - m_keywordEnum: 9
     m_keywordInfo: "You\u2019ll have to ask her the name of the song. I don\u2019t
       remember."
   - m_keywordEnum: 10
-    m_keywordInfo: "Hmmm. Yes! Thank you for getting the cogs in my brain turning
-      again bright one. \\nThat <b>blue star</b> will be our guide, and the <b>propeller</b>
-      will speed us on.  \\nI do hope my family are out there. That\u2019s all I
-      can do, I suppose. Hope. \\nLet's get through this storm! Back to the wheel! "
+    m_keywordInfo: "Yes! That is why I must brave this storm! To see my family. 
+      Thank you for getting the cogs in my brain turning again! . \\nThat <b>blue
+      star</b> will be our guide, and the <b>propeller</b> will speed us on.  \\nI
+      do hope my family are out there. That\u2019s all I can do, I suppose. Hope.
+      \\nBack to the wheel! "

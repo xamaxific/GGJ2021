@@ -10,6 +10,7 @@ public class InteractableCharacters : MonoBehaviour
     [SerializeField] private CharInfoObj m_charInfoObj;
     [SerializeField] private SelectableWordsUnlock[] m_selectableWordsUnlockArray;
     [SerializeField] private List<KeywordsENUM> m_usedKeys;
+    [SerializeField] private UIController m_myUIController;
     private int m_unlockCounter;
     private bool m_endUnlocked = false;
     private bool m_firstInteraction = true;
@@ -80,7 +81,7 @@ public class InteractableCharacters : MonoBehaviour
     public void CheckEndLeave() {
         if( m_endUnlocked ) {
             GameController.m_instance.m_checkGameEnd -= 1;
-            this.gameObject.SetActive( false );
+            m_myUIController.Hide();
         }
     }
 

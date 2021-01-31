@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     public static GameController m_instance;
     [SerializeField] private CameraController m_cameraController;
     [SerializeField] private InputController m_inputController;
-    [SerializeField] private UIManager m_uiController;
+    [SerializeField] private UIManager m_uiManager;
 
     public bool m_isGameStart = false;
     public int m_checkGameEnd = 3;
@@ -29,13 +29,13 @@ public class GameController : MonoBehaviour
 
     public void LeaveConversation() {
         if( !m_isAnimating ) {
-            m_uiController.ActivatePanel( false );
+            m_uiManager.ActivatePanel( false );
             m_cameraController.ReturnCamera();
         }
     }
 
     public void TurnOnPanel() {
-        m_uiController.ActivatePanel( true );
+        m_uiManager.ActivatePanel( true );
         m_inputController.GetCurrentIntChar().FirstInteraction();
     }
 
@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
         m_isAnimating = _b;
         if( m_checkGameEnd <= 0 ) {
             m_isGameStart = false;
-            m_uiController.ShowGameEndScreen();
+            m_uiManager.ShowGameEndScreen();
         }
     }
 
@@ -53,7 +53,7 @@ public class GameController : MonoBehaviour
     }
 
     public UIManager GetUIController() {
-        return m_uiController;
+        return m_uiManager;
     }
 
     public InteractableCharacters GCGetCurrIntChar() {

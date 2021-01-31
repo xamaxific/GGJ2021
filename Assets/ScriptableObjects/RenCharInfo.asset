@@ -17,51 +17,51 @@ MonoBehaviour:
   m_complete: 
   m_keywordInfo:
   - m_keywordEnum: 0
-    m_keywordInfo: "Where are we going? I... I don't know. It looks bleak out here.
-      We're close to shore... we could always go home again.\\nYeah\u2026 maybe we
-      should just turn round. "
+    m_keywordInfo: 'Where are we going? I... I don''t know. It looks bleak out here.
+      \nMaybe we should just turn round. '
   - m_keywordEnum: 1
     m_keywordInfo: "Me? I\u2019m\u2026 my name is\u2026 don\u2019t worry about it.
-      I\u2019m not important.\\nMy head hurts... "
+      I\u2019m not important. \\nMy head hurts... "
   - m_keywordEnum: 2
-    m_keywordInfo: "Oh, the frog? I used to watch him when I was little. In and out
-      of the boathouse.  \\nNever knew what he was building until\u2026 \\nHe came
-      by the steelworks... I was on shift... he asked me to make him a <color=#91e6c0><b>propeller</b></color>.
-      \\nThat was against the rules... I tried to say no, I really tried, but he
-      looked so desperate...  \\nSo I made him one\u2026 if he promised to tell me
-      what he was building. "
+    m_keywordInfo: "Oh, the frog? He\u2019s alright. I used to watch him when I was
+      little. In and out of the boathouse.  \\nNever knew what he was building until\u2026
+      \\nHe came by the steelworks... I was on shift... he asked me to make him a
+      <color=#91e6c0><b>propeller</b></color>. \\nThat was against the rules... I
+      tried to say no, I really tried, but he looked so desperate...  \\nSo I made
+      one\u2026 if he promised to tell me what he was building. "
   - m_keywordEnum: 3
-    m_keywordInfo: "The yellow bear? Oh- that's her name, isn\u2019t it, Yellow!
-      How did I forget that? \\nShe worked at the Soup House, she worked at the Soup
-      House in the town square.  \\nIt\u2019s embarrassing\u2026 I would always go
-      in and talk about my problems over a bowl of butternut stew. \\nOnce, I was
-      so upset about something... I was flapping my wings and I knocked over the
-      bowl and that <color=#91e6c0><b>orange soup splashed all over her</b></color>.
+    m_keywordInfo: "The yellow bear? Oh- that's her name, isn\u2019t it! Yellow! 
+      \\nHow did I forget that? \\nShe worked at the Soup House, she worked at the
+      Soup House in the town square.  \\nIt\u2019s embarrassing\u2026 I would always
+      go in and talk about my problems over a bowl of butternut stew. \\nOnce, I
+      was so upset about something... I was flapping my wings and I knocked over
+      the bowl and that <color=#91e6c0><b>orange soup splashed all over her</b></color>.
       \\nI wonder how she washed it out...  "
   - m_keywordEnum: 4
     m_keywordInfo: "You want me to tell you a story? Ha. No\u2026 I couldn\u2019t. 
       \\nI used to have this book, though. I'd read it on lonely nights. \\nIt was
-      dumb. Adventures out in the Shifting Seas. Pirates. Treasures. Romance. You
-      know. \\nWhen I left, I left the book under a child\u2019s pillow in the dorm.
-      I hope he likes it. "
+      dumb. Adventures out in the Shifting Seas. Pirates. Treasures. Romance.  \\nWhen
+      I left, I left the book under a child\u2019s pillow in the dorm. I hope he
+      likes it. "
   - m_keywordEnum: 5
     m_keywordInfo: "My doll? \\nIt's er\u2026 I take it everywhere. \\nI look after
-      someone. In the dorms. She has the bed next to me, and she\u2019s old. \\nLast
-      night, I came back to my dorm. I'd brought her soup. But... yeah. She\u2019d
+      someone. In the dorms. She has the bed next to me, and she\u2019s old. \\nShe
+      was old. \\nLast night, I came back to my dorm. I'd brought her soup. But...she\u2019d
       finally... \\nAnd I thought... I won't die here too. There\u2019s so much I
       want to see. \\nSo I grabbed my doll, and I went to see Triggs at the boathouse. "
   - m_keywordEnum: 6
     m_keywordInfo: "The propeller? Yeah\u2026 I made it in the steelworks for Triggs."
   - m_keywordEnum: 7
     m_keywordInfo: 'Mmm. Butternut soup. When I think about it, I can almost smell
-      it.  \nYellow was such a good cook. '
+      it.  \n Yellow was such a good cook. '
   - m_keywordEnum: 8
     m_keywordInfo: "When I was little, my Mum always said, the night sky is a reminder
-      of how small you are\u2026 \\nI never liked that. "
+      of how small you are\u2026 \\n I never liked that idea. "
   - m_keywordEnum: 9
     m_keywordInfo: Oh my god, I do not sing. Absolutely not.
   - m_keywordEnum: 10
-    m_keywordInfo: "That\u2019s it! I\u2019m gonna live a life on the sea, just like
-      in that <b>book</b>!  \\nAnd if I ever get worried, I\u2019ve got my <b>doll</b>.
-      We\u2019ll be ok if we stick together. \\nWhat am I doing out here, I better
-      go down and pull up the anchor. \\nThank you. Whoever you are. Adventure awaits!  "
+    m_keywordInfo: "That\u2019s why I\u2019m here! I was gonna live a life on the
+      sea, just like in that <b>book</b>!  \\nAnd if I ever get worried, I\u2019ve
+      got my <b>doll</b>. We\u2019ll be ok if we stick together. \\nWhat am I doing
+      out here, I better go down and pull up the anchor. \\nThank you. Whoever you
+      are. Adventure awaits!  "

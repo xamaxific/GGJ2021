@@ -29,7 +29,7 @@ MonoBehaviour:
       that boathouse of his, we''d go for walks. \nYears ago now... we stopped on
       the hills around the town. He pointed up at <color=#91e6c0><b>the blue star</color></b>.
       He said, "that star means so much to me, but I can''t say why." \nThought about
-      that for days. '
+      that for days.   '
   - m_keywordEnum: 3
     m_keywordInfo: "Me? I wouldn\u2019t give you my name. \\nEven if I could remember
       it. "
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_keywordInfo: "I\u2019m not a child."
   - m_keywordEnum: 6
     m_keywordInfo: "Triggs would never stop talking about that thing.  \\nGlad we
-      got one. Don\u2019t know where from. "
+      got one. Don\u2019t know where he got it from.. "
   - m_keywordEnum: 7
     m_keywordInfo: 'How to get soup off your fur? \nWeird question. \nIt''s easy.
       Every single day I had soup lodged in the fur.  \nYou just step out behind
@@ -49,12 +49,12 @@ MonoBehaviour:
   - m_keywordEnum: 8
     m_keywordInfo: Wonder what Triggs was talking about...
   - m_keywordEnum: 9
-    m_keywordInfo: 'Alright then. One song. \n\n"Stay with me, my little one, \nAt
-      home, wrapped up warm, \nWoe to those who try to leave, \nThe City Circled
-      by Storm" \n\nWell. I guess we didn''t follow that advice, did we, little one?
+    m_keywordInfo: 'Alright then. One song. \n \n"Stay with me, my little one, \nSafe
+      and wrapped up warm, \nWoe to those who try to leave \nThe City Circled by
+      Storm" \n \nWell. I guess we didn''t follow that advice, did we, little one?
       Ha... '
   - m_keywordEnum: 10
-    m_keywordInfo: "Hahaha. It\u2019s all so silly. \\nAll these <b>songs</b>, all
-      these rules, all this <b>soup</b> clogging my fur, holding me down. \\nHad
-      to get out. \\nThanks little one. You are clever. \\nBetter get back to shoveling
-      coal. Leave the past behind. Eyes on the horizon. "
+    m_keywordInfo: "Hahaha. It\u2019s all so silly, isn\u2019t it. \\nAll these <b>songs</b>,
+      all these rules, all this <b>soup</b> clogging my fur, holding me down. \\nHad
+      to get out. Had to unlearn it all. \\nThanks little one. You are clever. \\nBetter
+      get back to shoveling coal. Leave the past behind. Eyes on the horizon. "
