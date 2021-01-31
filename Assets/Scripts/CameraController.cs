@@ -42,7 +42,6 @@ public class CameraController : MonoBehaviour
             m_gameController.TurnOnPanel();
         }
         m_gameController.SetIsAnimating( false );
-
     }
 
     public void ReturnCamera() {

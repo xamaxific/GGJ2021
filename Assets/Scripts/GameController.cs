@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private InputController m_inputController;
     [SerializeField] private UIController m_uiController;
 
+    public bool m_isGameStart = false;
+    public int m_checkGameEnd = 3;
     private bool m_isAnimating;
   
     private void Awake() {
@@ -40,6 +42,14 @@ public class GameController : MonoBehaviour
     public void SetIsAnimating(bool _b) {
         Debug.Log( "Animating is " + _b );
         m_isAnimating = _b;
+        if( m_checkGameEnd <= 0 ) {
+            m_isGameStart = false;
+            m_uiController.ShowGameEndScreen();
+        }
+    }
+
+    public bool GetIsAnimating() {
+        return m_isAnimating;
     }
 
     public UIController GetUIController() {
@@ -50,4 +60,11 @@ public class GameController : MonoBehaviour
         return m_inputController.GetCurrentIntChar();
     }
 
+    public void StartGame() {
+        m_isGameStart = true;
+    }
+
+    public void QuitGame() {
+        Application.Quit();
+    }
 }

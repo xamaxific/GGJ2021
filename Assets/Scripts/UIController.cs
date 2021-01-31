@@ -11,9 +11,14 @@ public class UIController : MonoBehaviour
     [SerializeField] Scrollbar m_scrollBar;
     [SerializeField] ScrollRect m_scrollRect;
     [SerializeField] SelectableWords m_rememberWord;
+    [SerializeField] GameObject m_title;
+    [SerializeField] GameObject m_endcard;
+
 
     private bool m_updateScroll;
     private void Start() {
+        m_title.SetActive( true );
+        m_endcard.SetActive( false );
         m_dialoguePanel.SetActive( false );
         m_dialogueText.text = "";
     }
@@ -46,6 +51,14 @@ public class UIController : MonoBehaviour
             m_dialogueText.text = "";
         }
 
+    }
+
+    public void GameStart() {
+        m_title.SetActive( false );
+    }
+
+    public void ShowGameEndScreen() {
+        m_endcard.SetActive( true );
     }
 
     public void AppendParagraph( string _appendName, KeywordsENUM _key ) {

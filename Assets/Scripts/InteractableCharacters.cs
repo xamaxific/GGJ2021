@@ -61,6 +61,7 @@ public class InteractableCharacters : MonoBehaviour
                     for( int j = 0; j < m_usedKeys.Count; j++ ) {
                         if( _key == m_usedKeys[ j ] ) {
                             m_unlockCounter -= 1;
+                            m_usedKeys.Remove( m_usedKeys[ j ] );
                             if( m_unlockCounter <= 0 ) {
                                 m_endUnlocked = true;
                                 GameController.m_instance.GetUIController().SetRememberWordActive( true );
@@ -74,6 +75,13 @@ public class InteractableCharacters : MonoBehaviour
         }
         Debug.LogWarning( "Couldn't find keyword!" );
         return "ERROR!";
+    }
+
+    public void CheckEndLeave() {
+        if( m_endUnlocked ) {
+            GameController.m_instance.m_checkGameEnd -= 1;
+            this.gameObject.SetActive( false );
+        }
     }
 
     [Serializable]

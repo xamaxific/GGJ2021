@@ -19,30 +19,36 @@ public class InputController : MonoBehaviour
     }
 
     private void OnMouseClick() {
-        if( Input.GetMouseButtonDown( 0 ) ) {
-            if( !isInteractionLocked ) {
-                Vector3 mousePos = Camera.main.ScreenToWorldPoint( Input.mousePosition );
-                Vector2 mousePos2D = new Vector2( mousePos.x, mousePos.y );
-                RaycastHit2D hit = Physics2D.Raycast( mousePos2D, Vector2.zero );
-                if( hit.collider != null && hit.collider.CompareTag( "Interactable" ) ) {
-                    isInteractionLocked = true;
-                    float camSize;
-                    Vector3 camPos;
-                    m_currIntChar = hit.collider.GetComponent<InteractableCharacters>();
-                    m_currIntChar.OnInteracted( out camPos, out camSize );
-                    Debug.Log( m_currIntChar.name + " is clicked!" );
-                    m_gameController.ClickOnCharacter( camPos, camSize );
+        if( GameController.m_instance.m_isGameStart ) {
+            if( !GameController.m_instance.GetIsAnimating() && Input.GetMouseButtonDown( 0 ) ) {
+                if( !isInteractionLocked ) {
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+                    Vector2 mousePos2D = new Vector2( mousePos.x, mousePos.y );
+                    RaycastHit2D hit = Physics2D.Raycast( mousePos2D, Vector2.zero );
+                    if( hit.collider != null && hit.collider.CompareTag( "Interactable" ) ) {
+                        isInteractionLocked = true;
+                        float camSize;
+                        Vector3 camPos;
+                        m_currIntChar = hit.collider.GetComponent<InteractableCharacters>();
+                        m_currIntChar.OnInteracted( out camPos, out camSize );
+                        Debug.Log( m_currIntChar.name + " is clicked!" );
+                        m_gameController.ClickOnCharacter( camPos, camSize );
+                    }
                 }
             }
         }
 
+
     }
 
     private void OnLeaveConversation() {
-        if( isInteractionLocked && Input.GetMouseButtonDown( 1 ) ) {
-            m_gameController.LeaveConversation();
-            m_currIntChar = null;
-            isInteractionLocked = false;
+        if( GameController.m_instance.m_isGameStart ) {
+            if( !GameController.m_instance.GetIsAnimating() && isInteractionLocked && Input.GetMouseButtonDown( 1 ) ) {
+                m_gameController.LeaveConversation();
+                m_currIntChar.CheckEndLeave();
+                m_currIntChar = null;
+                isInteractionLocked = false;
+            }
         }
     }
 
