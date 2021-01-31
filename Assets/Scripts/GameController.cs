@@ -21,14 +21,20 @@ public class GameController : MonoBehaviour
 
     public void ClickOnCharacter(Vector3 _pos, float _size) {
         if( !m_isAnimating ) { 
-            m_cameraController.MoveCamera( _pos, _size );
+            m_cameraController.MoveCamera( _pos, _size, true );
         }
     }
 
     public void LeaveConversation() {
         if( !m_isAnimating ) {
+            m_uiController.ActivatePanel( false );
             m_cameraController.ReturnCamera();
         }
+    }
+
+    public void TurnOnPanel() {
+        m_uiController.ActivatePanel( true );
+        m_inputController.GetCurrentIntChar().FirstInteraction();
     }
 
     public void SetIsAnimating(bool _b) {
@@ -39,4 +45,9 @@ public class GameController : MonoBehaviour
     public UIController GetUIController() {
         return m_uiController;
     }
+
+    public InteractableCharacters GCGetCurrIntChar() {
+        return m_inputController.GetCurrentIntChar();
+    }
+
 }

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec3e5978df463304d8edaf7294830282, type: 3}
+  m_Name: TriggsCharInfo
+  m_EditorClassIdentifier: 
+  m_shownName: Triggs
+  m_opener: 'Why hello there. Just catching my breath. '
+  m_complete: 
+  m_keywordInfo:
+  - m_keywordEnum: 0
+    m_keywordInfo: "Where am I going? \\nOh\u2026 there was some reason... \\nDon\u2019t
+      ask me difficult questions... "
+  - m_keywordEnum: 1
+    m_keywordInfo: "Who, Ren? Oh don't mind her, she's always like that. Anxious
+      thing. \\nAlways fussing about the rules. Never thought she\u2019d actually
+      come with us. \\nLast night, though, she came into the boathouse and she was
+      completely different. \\nDetermination on her face. A <color=#91e6c0><b>straw
+      doll</color></b> in her hand.  \\nThat was when I knew we could take her with
+      us. "
+  - m_keywordEnum: 2
+    m_keywordInfo: "Me? My name? Oh well\u2026 \\nYou know\u2026 very busy at the
+      moment so\u2026 \\n*He\u2019s gone silent*"
+  - m_keywordEnum: 3
+    m_keywordInfo: 'Yes... the bear? The... it''s strange, I''ve known her all my
+      life but I can''t... \nNights by the fire. Songs. She was always <color=#91e6c0><b>singing</color></b>. 
+      \nOnce she sang a song about leaving the island... \nI don''t know why I remember
+      that. '
+  - m_keywordEnum: 4
+    m_keywordInfo: "Me? I\u2019ve got a thousand stories. \\nIf I could only remember
+      one... "
+  - m_keywordEnum: 5
+    m_keywordInfo: Ren was clutching that thing so tight...
+  - m_keywordEnum: 6
+    m_keywordInfo: "The propeller? It\u2019s fine! The only new piece of kit on this
+      hunk of junk. \\nI shouldn't have asked Ren to make it, but I was desperate.
+      I'd built this thing from wreckage. You know, pieces that drifted through the
+      stormwall. \\nI wouldn't have asked. Ren could have got caught. But... I had
+      to. I had to because... \\nBecause... that's it! Because I have to see my family
+      again. If they're still out there. "
+  - m_keywordEnum: 7
+    m_keywordInfo: "Don\u2019t tell the bear, but I never could stand her soup..."
+  - m_keywordEnum: 8
+    m_keywordInfo: "It <i>is</i> bright tonight, isn\u2019t it? \\nI didn't always
+      live on the island, you know. \\nI was a fisherman. I had a family. A current
+      pulled me to the storm wall, the ship splintered, and I woke up... well.  \\nThat
+      star. That star reminds me I am living under the same sky as they are.... "
+  - m_keywordEnum: 9
+    m_keywordInfo: "You\u2019ll have to ask her the name of the song. I don\u2019t
+      remember."
+  - m_keywordEnum: 10
+    m_keywordInfo: "Hmmm. Yes! Thank you for getting the cogs in my brain turning
+      again bright one. \\nThat <b>blue star</b> will be our guide, and the <b>propeller</b>
+      will speed us on.  \\nI do hope my family are out there. That\u2019s all I
+      can do, I suppose. Hope. \\nLet's get through this storm! Back to the wheel! "

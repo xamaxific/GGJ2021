@@ -22,11 +22,11 @@ public class CameraController : MonoBehaviour
         m_defCamPos = m_mainCamera.transform.position;
     }
 
-    public void MoveCamera(Vector3 _camPos, float _camSize) {
-        StartCoroutine( SmoothMove( _camPos, _camSize ) );
+    public void MoveCamera(Vector3 _camPos, float _camSize, bool _b) {
+        StartCoroutine( SmoothMove( _camPos, _camSize, _b ) );
     }
 
-    private IEnumerator SmoothMove(Vector3 _targPos, float _targSize) {
+    private IEnumerator SmoothMove(Vector3 _targPos, float _targSize, bool _b) {
         m_gameController.SetIsAnimating( true );
         float t = 0;
         float curSize = m_mainCamera.orthographicSize;
@@ -38,10 +38,16 @@ public class CameraController : MonoBehaviour
             m_mainCamera.transform.position = Vector3.Lerp( curPos, _targPos, m_moveAnim.Evaluate( t ) );
             yield return null;
         }
+        if( _b ) {
+            m_gameController.TurnOnPanel();
+        }
         m_gameController.SetIsAnimating( false );
+
     }
 
     public void ReturnCamera() {
-        StartCoroutine( SmoothMove(m_defCamPos, m_defCamSize) );
+        StartCoroutine( SmoothMove(m_defCamPos, m_defCamSize, false) );
     }
+
+
 }

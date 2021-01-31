@@ -7,7 +7,6 @@ public class InputController : MonoBehaviour
     private bool isInteractionLocked;
     private GameController m_gameController;
     private InteractableCharacters m_currIntChar;
-    [SerializeField] private SelectableWords[] m_selectableWordsArray;
     private List<SelectableWords> m_selectableWordsInventory;
 
     private void Start() {
@@ -31,10 +30,9 @@ public class InputController : MonoBehaviour
                     Vector3 camPos;
                     m_currIntChar = hit.collider.GetComponent<InteractableCharacters>();
                     m_currIntChar.OnInteracted( out camPos, out camSize );
+                    Debug.Log( m_currIntChar.name + " is clicked!" );
                     m_gameController.ClickOnCharacter( camPos, camSize );
                 }
-            } else {
-
             }
         }
 
@@ -43,7 +41,12 @@ public class InputController : MonoBehaviour
     private void OnLeaveConversation() {
         if( isInteractionLocked && Input.GetMouseButtonDown( 1 ) ) {
             m_gameController.LeaveConversation();
+            m_currIntChar = null;
             isInteractionLocked = false;
         }
+    }
+
+    public InteractableCharacters GetCurrentIntChar() {
+        return m_currIntChar;
     }
 }

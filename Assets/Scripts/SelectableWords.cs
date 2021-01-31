@@ -6,9 +6,8 @@ using TMPro;
 public class SelectableWords : MonoBehaviour
 {
     private UIController m_UIController;
-    [SerializeField] private string m_appendName;
-    [SerializeField] private string m_appendText;
-
+    public string m_myShownName;
+    public KeywordsENUM m_myKeyword;
     private void Start() {
         m_UIController = GameController.m_instance.GetUIController();
         if( m_UIController == null ) {
@@ -16,8 +15,8 @@ public class SelectableWords : MonoBehaviour
         }
     }
 
-    public void AppendText() {
-        m_UIController.AppendParagraph( m_appendName, m_appendText );
+    public void KeywordClicked() {
+        m_UIController.AppendParagraph(m_myShownName, m_myKeyword);
     }
 
 }
