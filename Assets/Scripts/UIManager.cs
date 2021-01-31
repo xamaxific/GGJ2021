@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class UIController : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    [SerializeField] GameObject m_dialoguePanel;
+    [SerializeField] UIController m_dialoguePanel;
     [SerializeField] TextMeshProUGUI m_dialogueText;
     [SerializeField] TextMeshProUGUI m_nameText;
     [SerializeField] Scrollbar m_scrollBar;
     [SerializeField] ScrollRect m_scrollRect;
     [SerializeField] SelectableWords m_rememberWord;
-    [SerializeField] GameObject m_title;
-    [SerializeField] GameObject m_endcard;
+    [SerializeField] UIController m_title;
+    [SerializeField] UIController m_endcard;
 
 
     private bool m_updateScroll;
     private void Start() {
-        m_title.SetActive( true );
-        m_endcard.SetActive( false );
-        m_dialoguePanel.SetActive( false );
+        m_title.gameObject.SetActive( true );
+        m_endcard.gameObject.SetActive( false );
+        m_dialoguePanel.gameObject.SetActive( false );
         m_dialogueText.text = "";
     }
 
@@ -45,20 +45,20 @@ public class UIController : MonoBehaviour
             } else {
                 SetRememberWordActive( false );
             }
-            m_dialoguePanel.SetActive( true );
+            m_dialoguePanel.gameObject.SetActive( true );
         } else {
-            m_dialoguePanel.SetActive( false );
+            m_dialoguePanel.Hide();
             m_dialogueText.text = "";
         }
 
     }
 
     public void GameStart() {
-        m_title.SetActive( false );
+        m_title.Hide();
     }
 
     public void ShowGameEndScreen() {
-        m_endcard.SetActive( true );
+        m_endcard.gameObject.SetActive( true );
     }
 
     public void AppendParagraph( string _appendName, KeywordsENUM _key ) {

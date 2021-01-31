@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     public static GameController m_instance;
     [SerializeField] private CameraController m_cameraController;
     [SerializeField] private InputController m_inputController;
-    [SerializeField] private UIController m_uiController;
+    [SerializeField] private UIManager m_uiController;
 
     public bool m_isGameStart = false;
     public int m_checkGameEnd = 3;
@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
         return m_isAnimating;
     }
 
-    public UIController GetUIController() {
+    public UIManager GetUIController() {
         return m_uiController;
     }
 

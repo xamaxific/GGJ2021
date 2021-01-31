@@ -8,6 +8,7 @@ public class InputController : MonoBehaviour
     private GameController m_gameController;
     private InteractableCharacters m_currIntChar;
     private List<SelectableWords> m_selectableWordsInventory;
+    [SerializeField] private AudioSource m_uiClick;
 
     private void Start() {
         m_gameController = GameController.m_instance;
@@ -19,8 +20,9 @@ public class InputController : MonoBehaviour
     }
 
     private void OnMouseClick() {
-        if( GameController.m_instance.m_isGameStart ) {
-            if( !GameController.m_instance.GetIsAnimating() && Input.GetMouseButtonDown( 0 ) ) {
+        if( Input.GetMouseButtonDown( 0 ) ) {
+            m_uiClick.Play();
+            if( GameController.m_instance.m_isGameStart && !GameController.m_instance.GetIsAnimating() ) {
                 if( !isInteractionLocked ) {
                     Vector3 mousePos = Camera.main.ScreenToWorldPoint( Input.mousePosition );
                     Vector2 mousePos2D = new Vector2( mousePos.x, mousePos.y );
@@ -37,6 +39,7 @@ public class InputController : MonoBehaviour
                 }
             }
         }
+
 
 
     }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class SelectableWords : MonoBehaviour
 {
-    private UIController m_UIController;
+    private UIManager m_UIController;
     public string m_myShownName;
     public KeywordsENUM m_myKeyword;
     private void Start() {
