@@ -234,7 +234,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: test
+  m_Name: CanvasFadeSlowShow
   m_Controller: {fileID: 9100000, guid: 96ed14593d92b4f7085689c4cd6d9f35, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: 7400000, guid: 75ecaee8b21784cbb948c91a21e670d8, type: 2}

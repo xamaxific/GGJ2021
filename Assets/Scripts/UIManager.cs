@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     }
 
     public void SetRememberWordActive( bool _b ) {
-        m_rememberWord.gameObject.SetActive( _b );
+        m_rememberWord.ShowWord( _b );
     }
 
     public void ActivatePanel(bool _b) {

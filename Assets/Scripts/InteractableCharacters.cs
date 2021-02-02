@@ -13,6 +13,7 @@ public class InteractableCharacters : MonoBehaviour
     [SerializeField] private UIController m_myUIController;
     private int m_unlockCounter;
     private bool m_endUnlocked = false;
+    private bool m_hasRemembered = false;
     private bool m_firstInteraction = true;
     [SerializeField] private SelectableWords m_myNamesake;
 
@@ -29,7 +30,7 @@ public class InteractableCharacters : MonoBehaviour
     public void FirstInteraction() {
         if( m_firstInteraction ) {
             m_firstInteraction = false;
-            m_myNamesake.gameObject.SetActive( true );
+            m_myNamesake.ShownFirstTime();
         }
     }
 
@@ -55,7 +56,10 @@ public class InteractableCharacters : MonoBehaviour
                 for( int j = 0; j < m_selectableWordsUnlockArray.Length; j++ ) {
                     if( m_selectableWordsUnlockArray[ j ].m_isUnlocked == false && _key == m_selectableWordsUnlockArray[ j ].m_wordUnlockKey ) {
                         m_selectableWordsUnlockArray[ j ].m_isUnlocked = true;
-                        m_selectableWordsUnlockArray[ j ].m_selectableWord.gameObject.SetActive( true );
+                        m_selectableWordsUnlockArray[ j ].m_selectableWord.ShownFirstTime();
+                    }
+                    if( m_selectableWordsUnlockArray[ j ].m_wordUnlockKey == KeywordsENUM.REMEMBER ) {
+                        m_hasRemembered = true;
                     }
                 }
                 if( !m_endUnlocked ) {
@@ -79,7 +83,7 @@ public class InteractableCharacters : MonoBehaviour
     }
 
     public void CheckEndLeave() {
-        if( m_endUnlocked ) {
+        if( m_hasRemembered ) {
             GameController.m_instance.m_checkGameEnd -= 1;
             m_myUIController.Hide();
         }
